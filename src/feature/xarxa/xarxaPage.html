@@ -13,7 +13,9 @@
       <button class="header__back" aria-label="Tornar enrere">←</button>
       <h1 class="header__title">Networking</h1>
       <div class="header__actions">
-        <button class="header__icon" aria-label="Estadístiques">📊</button>
+        <button class="header__icon" aria-label="Estadístiques">
+            <img src="/icons/align-bottom.svg" alt="" aria-hidden="true" />
+        </button>
         <div class="header__avatar" aria-label="Perfil d'usuari"></div>
       </div>
     </header>
@@ -21,18 +23,23 @@
     <!-- NAVBAR — desktop only -->
     <nav class="navbar" aria-label="Navegació principal">
       <a href="/" class="navbar__logo">
-        <span class="navbar__logo-icon">✕</span>
-        Alumni Connect
+        <img src="/icons/logo.svg" alt="Alumni Connect" />
       </a>
       <ul class="navbar__links">
-        <li><a href="/home" class="navbar__link">Home</a></li>
-        <li><a href="/xarxa" class="navbar__link navbar__link--active" aria-current="page">Networking</a></li>
-        <li><a href="/feina" class="navbar__link">Job Opportunities</a></li>
+        <li><a href="/" class="navbar__link">Home</a></li>
+        <li><a href="#" class="navbar__link navbar__link--active" aria-current="page">Networking</a></li>
+        <li><a href="#" class="navbar__link">Job Opportunities</a></li>
       </ul>
       <div class="navbar__icons">
-        <button aria-label="Cercar">🔍</button>
-        <button aria-label="Notificacions">🔔</button>
-        <button aria-label="Configuració">⚙️</button>
+        <button aria-label="Cercar">
+          <img src="/icons/search.svg" alt="" aria-hidden="true" />
+        </button>
+        <button aria-label="Notificacions">
+          <img src="/icons/bell.svg" alt="" aria-hidden="true" />
+        </button>
+        <button aria-label="Configuració">
+          <img src="/icons/settings-gear.svg" alt="" aria-hidden="true" />
+        </button>
         <div class="navbar__avatar"></div>
       </div>
     </nav>
@@ -65,40 +72,40 @@
       <!-- MAIN CONTENT -->
       <div class="content">
 
-        <!-- RECENT ACTIVITY — only desktop -->
+        <!-- RECENT ACTIVITY — desktop only -->
         <aside class="activity" aria-label="Activitat recent">
           <h2 class="activity__title">Recent Activity</h2>
           <ul class="activity__list" id="activity-list">
-            <!-- It is filled with TypeScript -->
+            <!-- Filled with TypeScript -->
           </ul>
         </aside>
 
         <!-- ALUMNI GRID -->
         <section class="alumni" aria-label="Llista d'alumnes">
           <ul class="alumni__grid" id="alumni-grid" role="list">
-            <!-- It is filled with TypeScript -->
+            <!-- Filled with TypeScript -->
           </ul>
         </section>
 
       </div>
     </main>
 
-    <!-- LOWER NAV — only mobile -->
+    <!-- BOTTOM NAV — mobile only -->
     <nav class="bottom-nav" aria-label="Navegació inferior">
-      <a href="/home" class="bottom-nav__item" aria-label="Inici">
-        <span class="bottom-nav__icon">🏠</span>
+      <a href="/" class="bottom-nav__item" aria-label="Inici">
+        <img src="/icons/home.svg" alt="" aria-hidden="true" class="bottom-nav__icon" />
         <span class="bottom-nav__label">Home</span>
       </a>
-      <a href="/xarxa" class="bottom-nav__item bottom-nav__item--active" aria-current="page" aria-label="Networking">
-        <span class="bottom-nav__icon">👥</span>
+      <a href="#" class="bottom-nav__item bottom-nav__item--active" aria-current="page">
+        <img src="/icons/network.svg" alt="" aria-hidden="true" class="bottom-nav__icon" />
         <span class="bottom-nav__label">Networking</span>
       </a>
-      <a href="/feina" class="bottom-nav__item" aria-label="Portal de feina">
-        <span class="bottom-nav__icon">💼</span>
+      <a href="#" class="bottom-nav__item" aria-label="Portal de feina">
+        <img src="/icons/jobportal.svg" alt="" aria-hidden="true" class="bottom-nav__icon" />
         <span class="bottom-nav__label">Job Portal</span>
       </a>
-      <a href="/perfil" class="bottom-nav__item" aria-label="Perfil">
-        <span class="bottom-nav__icon">👤</span>
+      <a href="#" class="bottom-nav__item" aria-label="Perfil">
+        <img src="/icons/profile.svg" alt="" aria-hidden="true" class="bottom-nav__icon" />
         <span class="bottom-nav__label">Profile</span>
       </a>
     </nav>
@@ -108,21 +115,51 @@
       <div class="footer__newsletter">
         <p class="footer__newsletter-text">"No et perdis res, subscriu-te!"</p>
         <div class="footer__newsletter-form">
-          <label for="newsletter-email" class="sr-only">El teu email</label>
-          <input
-            type="email"
-            id="newsletter-email"
-            class="footer__newsletter-input"
-            placeholder="El teu email"
-          />
+          <div class="footer__newsletter-input-wrap">
+            <img src="/icons/mail.svg" alt="" aria-hidden="true" class="footer__newsletter-icon" />
+            <input
+              type="email"
+              id="newsletter-email"
+              class="footer__newsletter-input"
+              placeholder="El teu email"
+            />
+          </div>
           <button class="footer__newsletter-btn">Subscriu-te</button>
         </div>
       </div>
+      <div class="footer__content">
+        <a href="/" class="footer__logo">
+          <img src="/icons/footer-logo.svg" alt="XLumni" />
+        </a>
+        <nav class="footer__nav" aria-label="Navegació del footer">
+          <a href="#" class="footer__nav-link">Sobre nosaltres</a>
+          <a href="#" class="footer__nav-link">Funcionalitats</a>
+          <a href="#" class="footer__nav-link">Centre d'ajuda</a>
+          <a href="#" class="footer__nav-link">Contacta'ns</a>
+          <a href="#" class="footer__nav-link">FAQs</a>
+          <a href="#" class="footer__nav-link">Oportunitats laborals</a>
+        </nav>
+      </div>
       <div class="footer__bottom">
+        <select class="footer__lang" aria-label="Seleccionar idioma">
+          <option value="ca">Català</option>
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
         <p class="footer__copy">© 2024 Brand, Inc. • Privadesa • Termes d'ús • Mapa del lloc</p>
+        <div class="footer__social" aria-label="Xarxes socials">
+          <a href="#" aria-label="Facebook">
+            <img src="/icons/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <img src="/icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="#" aria-label="YouTube">
+            <img src="/icons/youtube.svg" alt="YouTube" />
+          </a>
+        </div>
       </div>
     </footer>
-
     <script type="module" src="./xarxaManager.ts"></script>
   </body>
 </html>
