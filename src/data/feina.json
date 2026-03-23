@@ -1,0 +1,90 @@
+{
+  "jobsDesktop": [
+    {
+      "id": 1,
+      "title": "Software Engineer",
+      "type": "Full-time position",
+      "posted": "Posted 3 days ago",
+      "btn": "Apply Now",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "title": "Product Manager",
+      "type": "Remote opportunity",
+      "posted": "Posted 1 week ago",
+      "btn": "Learn More",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "title": "Data Analyst",
+      "type": "Contract-based role",
+      "posted": "Posted 2 days ago",
+      "btn": "View Details",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "title": "UX Designer",
+      "type": "Flexible hours",
+      "posted": "Posted 5 days ago",
+      "btn": "Apply",
+      "image": ""
+    },
+    {
+      "id": 5,
+      "title": "HR Specialist",
+      "type": "Part-time role",
+      "posted": "Posted 4 days ago",
+      "btn": "Discover More",
+      "image": ""
+    },
+    {
+      "id": 6,
+      "title": "Marketing Lead",
+      "type": "Full-time role",
+      "posted": "Posted 1 day ago",
+      "btn": "Get Started",
+      "image": ""
+    }
+  ],
+  "jobsMobile": [
+    {
+      "id": 1,
+      "title": "Marketing Role",
+      "role": "Marketing Specialist at XYZ",
+      "location": "Remote",
+      "deadline": "Apply by Nov 15",
+      "btn": "Apply",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "title": "Software Engineer",
+      "role": "Software Engineer at ABC",
+      "location": "San Francisco",
+      "deadline": "Apply by Nov 23",
+      "btn": "Apply",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "title": "Clinical Analyst",
+      "role": "Clinical Analyst at MediCare",
+      "location": "New York",
+      "deadline": "Apply by Nov 3",
+      "btn": "Apply",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "title": "Content Writer",
+      "role": "Content Writer at WritesHub",
+      "location": "Remote",
+      "deadline": "Apply Dec 5",
+      "btn": "Apply",
+      "image": ""
+    }
+  ]
+}
