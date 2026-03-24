@@ -1,19 +1,4 @@
-// ================================
-// TIPUS (Types)
-// ================================
-interface Alumni {
-  id: number;
-  name: string;
-  promotion: string;
-  role: string;
-  location: string;
-  avatar: string;
-}
-
-interface XarxaData {
-  alumni: Alumni[];
-  recentActivity: string[];
-}
+import type{ Alumni, XarxaData } from '../../types/xarxaTypes';
 
 // ================================
 // GET DATA FROM JSON

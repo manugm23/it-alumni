@@ -1,29 +1,4 @@
-// ================================
-// TIPUS (Types)
-// ================================
-interface JobDesktop {
-  id: number;
-  title: string;
-  type: string;
-  posted: string;
-  btn: string;
-  image: string;
-}
-
-interface JobMobile {
-  id: number;
-  title: string;
-  role: string;
-  location: string;
-  deadline: string;
-  btn: string;
-  image: string;
-}
-
-interface FeinaData {
-  jobsDesktop: JobDesktop[];
-  jobsMobile: JobMobile[];
-}
+import type { FeinaData, JobMobile, JobDesktop } from '../../types/feinaTypes';
 
 // ================================
 // DETECTAR SI ES MOBILE O DESKTOP

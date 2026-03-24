@@ -358,6 +358,7 @@ a {
   background-color: var(--color-footer-bg);
   color: var(--color-white);
   padding: var(--spacing-xl);
+  display: none;
 }
 
 .footer__newsletter {
@@ -578,5 +579,9 @@ a {
 
   .bottom-nav {
     display: none;
+  }
+
+   .footer {
+    display: block;
   }
 }
