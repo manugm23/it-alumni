@@ -9,7 +9,7 @@
   --color-gray-light: #DEE1E6;
   --color-gray-medium: #BCC1CA;
   --color-bg: #F5F5F5;
-  --color-footer-bg: #1A1A2E;
+  --color-footer-bg: #1D2128;
 
   --font-family: 'Inter', sans-serif;
   --font-size-sm: 0.75rem;
@@ -142,7 +142,7 @@ a {
 
 .navbar__link {
   text-decoration: none;
-  color: var(--color-black);
+  color: #565E6C;
   font-size: var(--font-size-base);
   padding-bottom: var(--spacing-xs);
 }
