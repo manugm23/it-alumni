@@ -1,0 +1,50 @@
+{
+  "alumni": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "promotion": "Class of 2010",
+      "role": "CEO at TechSolutions Inc.",
+      "location": "San Francisco, CA",
+      "avatar": "/avatars/john-doe.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sarah Johnson",
+      "promotion": "Class of 2015",
+      "role": "Marketing Director at GreenWave",
+      "location": "New York, NY",
+      "avatar": "/avatars/sarah-johnson.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Michael Brown",
+      "promotion": "Class of 2008",
+      "role": "Founder of EduLearn Academy",
+      "location": "Chicago, IL",
+      "avatar": "/avatars/michael-brown.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "promotion": "Class of 2012",
+      "role": "Research Scientist at BioTech Labs",
+      "location": "Remote",
+      "avatar": "/avatars/emily-davis.jpg"
+    },
+    {
+      "id": 5,
+      "name": "James Lee",
+      "promotion": "Class of 2005",
+      "role": "Managing Partner at Lee & Associates",
+      "location": "Boston, MA",
+      "avatar": "/avatars/james-lee.jpg"
+    }
+  ],
+  "recentActivity": [
+    "Jane Smith started following John Doe",
+    "David Brown and John Doe connected",
+    "John Doe shared Top 10 Product Management Tips article",
+    "Jane Smith and David Brown connected"
+  ]
+}

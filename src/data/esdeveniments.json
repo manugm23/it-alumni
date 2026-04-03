@@ -1,0 +1,34 @@
+{
+  "esdeveniments": [
+    {
+      "id": 1,
+      "title": "Figma: Fes els teus mockups",
+      "description": "Figma és l'eina de disseny digital del moment. És gratuita, moderna, molt versàtil, fàcil d'aprendre i és perfecta per treballar en equip. A diferència d'altres eines s'executa al núvol i la comunitat Figma ofereix una àmplia varietat de recursos i plugins open source.",
+      "dates": "Del dl. 30/03/26 al dj. 02/04/26",
+      "hours": "09:30-12:30h",
+      "duration": "3 sessions",
+      "image": "/images/esdeveniments/figma.png",
+      "btn": "Veure detall"
+    },
+    {
+      "id": 2,
+      "title": "Lògica de la programació",
+      "description": "Aquesta formació de 12 hores està dissenyada per a introduir als participants en el món de la programació. S'hi aprendran els conceptes comuns a tots els llenguatges de programació, així com els fonaments del llenguatge algorítmic.",
+      "dates": "Del dt. 14/04/26 al dj. 16/04/26",
+      "hours": "09:30-13:30h",
+      "duration": "3 sessions",
+      "image": "/images/esdeveniments/programacio_generica.png",
+      "btn": "Veure detall"
+    },
+    {
+      "id": 3,
+      "title": "GIT i GITHUB per a principiants",
+      "description": "Aquesta activitat formativa de curta durada està dissenyada perquè t'introdueixis en l'ús de GIT i GitHub, dues eines essencials per al control de versions de codi.",
+      "dates": "Horari: dv. 17/04/26",
+      "hours": "15:30-19:30h",
+      "duration": "1 sessió",
+      "image": "/images/esdeveniments/github.png",
+      "btn": "Veure detall"
+    }
+  ]
+}

@@ -1,13 +1,221 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ca">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>it-alumni</title>
+    <title>Alumni Connect — Inici</title>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
+
+    <!-- NAVBAR — desktop -->
+    <nav class="navbar" aria-label="Navegació principal">
+      <a href="/" class="navbar__logo">
+        <img src="/icons/logo.svg" alt="XLumni logo" />
+      </a>
+      <ul class="navbar__links">
+        <li>
+          <a href="/" class="navbar__link navbar__link--active" aria-current="page">Inici</a>
+        </li>
+        <li>
+          <a href="/src/feature/xarxa/xarxaPage.html" class="navbar__link">Xarxa</a>
+        </li>
+        <li>
+          <a href="/src/feature/feina/feinaPage.html" class="navbar__link">Oportunitats de feina</a>
+        </li>
+        <li>
+          <a href="/src/feature/esdeveniments/esdevenimentsPage.html" class="navbar__link">Esdeveniments</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <button class="navbar__btn navbar__btn--outline">
+          <img src="/icons/register-buttom-icon.svg" alt="" aria-hidden="true" />
+          Apunta't
+        </button>
+        <button class="navbar__btn navbar__btn--primary">
+          <img src="/icons/profile-buttom-icon.svg" alt="" aria-hidden="true" />
+          Com et veuen?
+        </button>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- HERO -->
+      <section class="hero" aria-label="Benvinguda">
+        <h1 class="hero__title">Benvingut, Alumni</h1>
+        <p class="hero__subtitle">
+          Connectant i empoderant a la nostra comunitat global d'alumnes
+        </p>
+        <div class="hero__buttons">
+          <button class="btn btn--primary">Uneix-te</button>
+          <button class="btn btn--outline">Mira que fem</button>
+        </div>
+        <div class="hero__image">
+          <img src="/images/hero-image.png" alt="Comunitat Alumni reunida" />
+          <button class="hero__play" aria-label="Reproduir vídeo">▶</button>
+        </div>
+      </section>
+
+      <!-- QUÈ GUANYES -->
+      <section class="features" aria-label="Beneficis">
+        <h2 class="features__title">Què guanyes en formar-ne part?</h2>
+        <ul class="features__grid">
+
+          <li class="feature-card">
+            <div class="feature-card__icon">
+              <img src="/icons/icon__hat.svg" alt="" aria-hidden="true" />
+            </div>
+            <p class="feature-card__text">
+              Comparteix i no perdis el contacte: Puja els teus moments importants,
+              explica com va tot i queda amb els companys. Una xarxa per estar més a prop.
+            </p>
+            <button class="btn btn--outline-primary">Apunta't ja</button>
+          </li>
+
+          <li class="feature-card">
+            <div class="feature-card__icon">
+              <img src="/icons/icon__comments.svg" alt="" aria-hidden="true" />
+            </div>
+            <p class="feature-card__text">
+              Participa en discussions: Intercanvia coneixements, punts de vista
+              i opinions sobre temes que t'interessen.
+            </p>
+            <button class="btn btn--outline-primary">Apunta't ja</button>
+          </li>
+
+          <li class="feature-card">
+            <div class="feature-card__icon">
+              <img src="/icons/icon__a-add.svg" alt="" aria-hidden="true" />
+            </div>
+            <p class="feature-card__text">
+              Xarxa Alumni: Connecta amb companys de promoció, fes noves amistats
+              i crea records per durar tota la vida.
+            </p>
+            <button class="btn btn--outline-primary">Apunta't ja</button>
+          </li>
+
+        </ul>
+      </section>
+
+      <!-- TESTIMONIS -->
+      <section class="testimonials" aria-label="Testimonis d'usuaris">
+        <h2 class="testimonials__title">
+          "T'ensenyem el que opinen els nostres súper-usuaris!"
+        </h2>
+        <ul class="testimonials__grid">
+
+          <li class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar"></div>
+              <div>
+                <p class="testimonial-card__name">Mikel</p>
+                <p class="testimonial-card__stars" aria-label="5 estrelles">★★★★★</p>
+              </div>
+            </div>
+            <p class="testimonial-card__text">
+              "Gràcies a IT Alumni vaig aconseguir la feina dels meus somnis
+              en el món tech amb el seu increïble programa de mentoria."
+            </p>
+          </li>
+
+          <li class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar"></div>
+              <div>
+                <p class="testimonial-card__name">Emma</p>
+                <p class="testimonial-card__stars" aria-label="5 estrelles">★★★★★</p>
+              </div>
+            </div>
+            <p class="testimonial-card__text">
+              "La meva xarxa d'aquesta comunitat ha estat clau: va revolucionar
+              la meva carrera i em va mostrar camins insospitats."
+            </p>
+          </li>
+
+          <li class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar"></div>
+              <div>
+                <p class="testimonial-card__name">Laia</p>
+                <p class="testimonial-card__stars" aria-label="5 estrelles">★★★★★</p>
+              </div>
+            </div>
+            <p class="testimonial-card__text">
+              "IT Alumni em va donar les eines i l'autoestima
+              per fer realitat el meu somni d'emprendre."
+            </p>
+          </li>
+
+        </ul>
+        <div class="testimonials__nav" aria-label="Navegació testimonis">
+          <button class="testimonials__nav-btn" aria-label="Anterior">‹</button>
+          <button class="testimonials__nav-btn" aria-label="Següent">›</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__newsletter">
+        <p class="footer__newsletter-text">"No et perdis res, subscriu-te!"</p>
+        <div class="footer__newsletter-form">
+          <div class="footer__newsletter-input-wrap">
+            <img src="/icons/mail.svg" alt="" aria-hidden="true" class="footer__newsletter-icon" />
+            <input
+              type="email"
+              id="newsletter-email"
+              class="footer__newsletter-input"
+              placeholder="El teu email"
+            />
+          </div>
+          <button class="footer__newsletter-btn">Subscriu-te</button>
+        </div>
+      </div>
+      <div class="footer__content">
+        <a href="/" class="footer__logo">
+          <img src="/icons/footer-logo.svg" alt="XLumni" />
+        </a>
+        <nav class="footer__nav" aria-label="Navegació del footer">
+          <a href="#" class="footer__nav-link">Sobre nosaltres</a>
+          <a href="#" class="footer__nav-link">Funcionalitats</a>
+          <a href="#" class="footer__nav-link">Centre d'ajuda</a>
+          <a href="#" class="footer__nav-link">Contacta'ns</a>
+          <a href="#" class="footer__nav-link">FAQs</a>
+          <a href="#" class="footer__nav-link">Oportunitats laborals</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <select class="footer__lang" aria-label="Seleccionar idioma">
+          <option value="ca">Català</option>
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+        <p class="footer__copy">
+          © 2024 Brand, Inc. • Privadesa • Termes d'ús • Mapa del lloc
+        </p>
+        <div class="footer__social" aria-label="Xarxes socials">
+          <a href="#" aria-label="Facebook">
+            <img src="/icons/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <img src="/icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="#" aria-label="YouTube">
+            <img src="/icons/youtube.svg" alt="YouTube" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SPLASH SCREEN — solo mobile -->
+    <div class="splash" id="splash">
+      <div class="splash__content">
+        <img src="/icons/logo-mobile.svg" alt="XLumni" class="splash__logo" />
+        <p class="splash__subtitle">Connectant i empoderant a la nostra comunitat global d'alumnes</p>
+      </div>
+      <button class="splash__btn">Uneix-te</button>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

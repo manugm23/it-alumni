@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Portal | Alumni Connect</title>
+    <link rel="stylesheet" href="feinaStyle.css" />
+  </head>
+  <body>
+
+    <!-- HEADER — mobile only -->
+    <header class="header">
+      <button class="header__back" aria-label="Tornar enrere">←</button>
+      <h1 class="header__title">Job Portal</h1>
+      <div class="header__actions">
+        <button class="header__icon" aria-label="Estadístiques">
+            <img src="/icons/align-bottom.svg" alt="" aria-hidden="true" />
+        </button>
+        <div class="header__avatar" aria-label="Perfil d'usuari"></div>
+      </div>
+    </header>
+    
+
+    <!-- NAVBAR — desktop only -->
+    <nav class="navbar" aria-label="Navegació principal">
+      <a href="/" class="navbar__logo">
+        <img src="/icons/logo.svg" alt="Alumni Connect" />
+      </a>
+      <ul class="navbar__links">
+        <li>
+          <a href="/" class="navbar__link">Home</a>
+        </li>
+        <li>
+          <a href="../xarxa/xarxaPage.html" class="navbar__link">Networking</a>
+        </li>
+        <li>
+          <a href="../feina/feinaPage.html" class="navbar__link navbar__link--active" aria-current="page">Job Opportunities</a>
+        </li>
+        <li>
+          <a href="../esdeveniments/esdevenimentsPage.html" class="navbar__link">Esdeveniments</a>
+        </li>
+      </ul>
+      <div class="navbar__icons">
+        <button aria-label="Cercar">
+          <img src="/icons/search.svg" alt="" aria-hidden="true" />
+        </button>
+        <button aria-label="Notificacions">
+          <img src="/icons/bell.svg" alt="" aria-hidden="true" />
+        </button>
+        <button aria-label="Configuració">
+          <img src="/icons/settings-gear.svg" alt="" aria-hidden="true" />
+        </button>
+        <div class="navbar__avatar"></div>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main" id="main-content">
+
+      <!-- SEARCH BAR -->
+      <section class="search-section" aria-label="Cerca de feina">
+        <div class="search-section__bar">
+          <label for="search-input" class="sr-only">Cercar ofertes de feina</label>
+          <input
+            type="search"
+            id="search-input"
+            class="search-section__input"
+            placeholder="Search jobs..."
+            aria-label="Cercar ofertes de feina"
+          />
+        </div>
+      </section>
+
+      <!-- JOB LISTINGS -->
+      <section class="jobs" aria-label="Ofertes de feina">
+        <ul class="jobs__grid" id="jobs-grid" role="list">
+          <!-- Filled with TypeScript -->
+        </ul>
+      </section>
+
+    </main>
+
+    <!-- BOTTOM NAV — mobile only -->
+    <nav class="bottom-nav" aria-label="Navegació inferior">
+      <a href="/" class="bottom-nav__item" aria-label="Inici">
+        <img src="/icons/home.svg" alt="" aria-hidden="true" class="bottom-nav__icon" />
+        <span class="bottom-nav__label">Home</span>
+      </a>
+      <a href="../xarxa/xarxaPage.html" class="bottom-nav__item" aria-label="Networking">
+        <img src="/icons/network.svg" alt="" aria-hidden="true" class="bottom-nav__icon" />
+        <span class="bottom-nav__label">Networking</span>
+      </a>
+      <a href="../feina/feinaPage.html" class="bottom-nav__item bottom-nav__item--active" aria-current="JobPotal">
+        <img src="/icons/jobportal.svg" alt="" aria-hidden="true" class="bottom-nav__icon" />
+        <span class="bottom-nav__label">Job Portal</span>
+      </a>
+      <a href="../esdeveniments/esdevenimentsPage.html" class="bottom-nav__item" aria-label="Esdeveniments">
+        <img src="/icons/profile.svg" alt="" aria-hidden="true" class="bottom-nav__icon" />
+        <span class="bottom-nav__label">Esdeveniments</span>
+      </a>
+    </nav>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__newsletter">
+        <p class="footer__newsletter-text">"No et perdis res, subscriu-te!"</p>
+        <div class="footer__newsletter-form">
+          <div class="footer__newsletter-input-wrap">
+            <img src="/icons/mail.svg" alt="" aria-hidden="true" class="footer__newsletter-icon" />
+            <input
+              type="email"
+              id="newsletter-email"
+              class="footer__newsletter-input"
+              placeholder="El teu email"
+            />
+          </div>
+          <button class="footer__newsletter-btn">Subscriu-te</button>
+        </div>
+      </div>
+      <div class="footer__content">
+        <a href="/" class="footer__logo">
+          <img src="/icons/footer-logo.svg" alt="XLumni" />
+        </a>
+        <nav class="footer__nav" aria-label="Navegació del footer">
+          <a href="#" class="footer__nav-link">Sobre nosaltres</a>
+          <a href="#" class="footer__nav-link">Funcionalitats</a>
+          <a href="#" class="footer__nav-link">Centre d'ajuda</a>
+          <a href="#" class="footer__nav-link">Contacta'ns</a>
+          <a href="#" class="footer__nav-link">FAQs</a>
+          <a href="#" class="footer__nav-link">Oportunitats laborals</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <select class="footer__lang" aria-label="Seleccionar idioma">
+          <option value="ca">Català</option>
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+        <p class="footer__copy">© 2024 Brand, Inc. • Privadesa • Termes d'ús • Mapa del lloc</p>
+        <div class="footer__social" aria-label="Xarxes socials">
+          <a href="#" aria-label="Facebook">
+            <img src="/icons/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <img src="/icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="#" aria-label="YouTube">
+            <img src="/icons/youtube.svg" alt="YouTube" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./feinaManager.ts"></script>
+  </body>
+</html>
