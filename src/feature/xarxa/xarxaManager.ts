@@ -1,8 +1,5 @@
 import type{ Alumni, XarxaData } from '../../types/xarxaTypes';
 
-// ================================
-// GET DATA FROM JSON
-// ================================
 const fetchAlumniData = async (): Promise<XarxaData> => {
   const response = await fetch('/src/data/xarxa.json');
   if (!response.ok) {
@@ -12,9 +9,6 @@ const fetchAlumniData = async (): Promise<XarxaData> => {
   return data;
 };
 
-// ================================
-// RENDERING ALUMNI CARDS
-// ================================
 const renderAlumniCards = (alumniList: Alumni[]): void => {
   const grid = document.getElementById('alumni-grid');
   if (!grid) return;
@@ -47,9 +41,6 @@ const renderAlumniCards = (alumniList: Alumni[]): void => {
   });
 };
 
-// ================================
-// RENDER RECENT ACTIVITY
-// ================================
 const renderRecentActivity = (activities: string[]): void => {
   const list = document.getElementById('activity-list');
   if (!list) return;
@@ -64,9 +55,6 @@ const renderRecentActivity = (activities: string[]): void => {
   });
 };
 
-// ================================
-// CLOSE (Filter alumni)
-// ================================
 const setupSearch = (alumniList: Alumni[]): void => {
   const input = document.getElementById('search-input') as HTMLInputElement;
   if (!input) return;
@@ -83,9 +71,6 @@ const setupSearch = (alumniList: Alumni[]): void => {
   });
 };
 
-// ================================
-// FILTRES (Recent Activity, Popular, Most Connected)
-// ================================
 const setupFilters = (alumniList: Alumni[]): void => {
   const buttons = document.querySelectorAll<HTMLButtonElement>('.filters__btn');
 
@@ -113,9 +98,6 @@ const setupFilters = (alumniList: Alumni[]): void => {
   });
 };
 
-// ================================
-// INIT — Entry point
-// ================================
 const init = async (): Promise<void> => {
   try {
     const data = await fetchAlumniData();

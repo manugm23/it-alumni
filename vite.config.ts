@@ -9,7 +9,9 @@ export default defineConfig({
     globals: true,
     include: ['src/**/*.{test,spec}.{js,ts}'],
     coverage: {
-      provider: 'v8'
+      provider: 'v8',
+      reporter: ['text', 'lcov'],
+      enabled: true
     }
   },
   resolve: {

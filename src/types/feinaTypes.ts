@@ -1,6 +1,3 @@
-// ================================
-// TIPUS (Types)
-// ================================
 export interface JobDesktop {
   id: number;
   title: string;

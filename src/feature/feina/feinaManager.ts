@@ -1,13 +1,7 @@
 import type { FeinaData, JobMobile, JobDesktop } from '../../types/feinaTypes';
 
-// ================================
-// DETECTAR SI ES MOBILE O DESKTOP
-// ================================
 const isMobile = (): boolean => window.innerWidth < 768;
 
-// ================================
-// OBTENIR DADES DEL JSON
-// ================================
 const fetchFeinaData = async (): Promise<FeinaData> => {
   const response = await fetch('/src/data/feina.json');
   if (!response.ok) {
@@ -17,9 +11,6 @@ const fetchFeinaData = async (): Promise<FeinaData> => {
   return data;
 };
 
-// ================================
-// RENDERITZAR CARDS MOBILE
-// ================================
 const renderMobileCards = (jobs: JobMobile[]): void => {
   const grid = document.getElementById('jobs-grid');
   if (!grid) return;
@@ -51,9 +42,6 @@ const renderMobileCards = (jobs: JobMobile[]): void => {
   });
 };
 
-// ================================
-// RENDERITZAR CARDS DESKTOP
-// ================================
 const renderDesktopCards = (jobs: JobDesktop[]): void => {
   const grid = document.getElementById('jobs-grid');
   if (!grid) return;
@@ -85,9 +73,6 @@ const renderDesktopCards = (jobs: JobDesktop[]): void => {
   });
 };
 
-// ================================
-// RENDERITZAR SEGONS MIDA PANTALLA
-// ================================
 const renderCards = (data: FeinaData): void => {
   if (isMobile()) {
     renderMobileCards(data.jobsMobile);
@@ -96,9 +81,6 @@ const renderCards = (data: FeinaData): void => {
   }
 };
 
-// ================================
-// CERCA (Filtrar feina)
-// ================================
 const setupSearch = (data: FeinaData): void => {
   const input = document.getElementById('search-input') as HTMLInputElement;
   if (!input) return;
@@ -123,9 +105,6 @@ const setupSearch = (data: FeinaData): void => {
   });
 };
 
-// ================================
-// RESPONSIVE — re-renderitzar al canviar mida
-// ================================
 const setupResize = (data: FeinaData): void => {
   let currentMobile = isMobile();
 
@@ -138,9 +117,6 @@ const setupResize = (data: FeinaData): void => {
   });
 };
 
-// ================================
-// INIT — Punt d'entrada
-// ================================
 const init = async (): Promise<void> => {
   try {
     const data = await fetchFeinaData();

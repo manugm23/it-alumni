@@ -1,8 +1,5 @@
 import type { Esdeveniment, EsdevenimentsData} from '../../types/esdevenimentsTypes';
 
-// ================================
-// OBTENIR DADES DEL JSON
-// ================================
 const fetchEsdevenimentsData = async (): Promise<EsdevenimentsData> => {
   const response = await fetch('/src/data/esdeveniments.json');
   if (!response.ok) {
@@ -12,9 +9,6 @@ const fetchEsdevenimentsData = async (): Promise<EsdevenimentsData> => {
   return data;
 };
 
-// ================================
-// RENDERITZAR CARDS
-// ================================
 const renderEsdeveniments = (llista: Esdeveniment[]): void => {
   const list = document.getElementById('events-list');
   if (!list) return;
@@ -52,9 +46,6 @@ const renderEsdeveniments = (llista: Esdeveniment[]): void => {
   });
 };
 
-// ================================
-// CERCA (Filtrar esdeveniments)
-// ================================
 const setupSearch = (llista: Esdeveniment[]): void => {
   const input = document.getElementById('search-input') as HTMLInputElement;
   if (!input) return;
@@ -72,9 +63,6 @@ const setupSearch = (llista: Esdeveniment[]): void => {
   });
 };
 
-// ================================
-// INIT — Punt d'entrada
-// ================================
 const init = async (): Promise<void> => {
   try {
     const data = await fetchEsdevenimentsData();

@@ -1,6 +1,3 @@
-/* ================================
-   VARIABLES
-   ================================ */
 :root {
   --color-primary: #CE0A86;
   --color-secondary: #C90B2F;
@@ -35,9 +32,6 @@
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* ================================
-   BASE RESET
-   ================================ */
 *,
 *::before,
 *::after {
@@ -67,7 +61,6 @@ a {
   color: inherit;
 }
 
-/* Screen reader only */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -79,9 +72,6 @@ a {
   border: 0;
 }
 
-/* ================================
-   BUTTONS — reutilitzables
-   ================================ */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -115,9 +105,6 @@ a {
   color: var(--color-white);
 }
 
-/* ================================
-   NAVBAR
-   ================================ */
 .navbar {
   display: flex;
   align-items: center;
@@ -185,16 +172,10 @@ a {
   opacity: 0.85;
 }
 
-/* ================================
-   MAIN
-   ================================ */
 .main {
   padding: 0;
 }
 
-/* ================================
-   HERO
-   ================================ */
 .hero {
   text-align: center;
   padding: var(--spacing-xxl) var(--spacing-md);
@@ -263,9 +244,6 @@ a {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
-/* ================================
-   FEATURES — Què guanyes
-   ================================ */
 .features {
   padding: var(--spacing-xxl) var(--spacing-md);
   text-align: center;
@@ -324,9 +302,6 @@ a {
   color: var(--color-white);
 }
 
-/* ================================
-   TESTIMONIALS
-   ================================ */
 .testimonials {
   padding: var(--spacing-xxl) var(--spacing-md);
   text-align: center;
@@ -421,9 +396,6 @@ a {
   border-color: var(--color-primary);
 }
 
-/* ================================
-   FOOTER
-   ================================ */
 .footer {
   background-color: var(--color-footer-bg);
   color: var(--color-white);
@@ -454,7 +426,6 @@ a {
   width: 100%;
 }
 
-/* Botón newsletter */
 .footer__newsletter-btn {
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -472,12 +443,10 @@ a {
   opacity: 0.85;
 }
 
-/* Icono mail blanco */
 .footer__newsletter-icon {
   filter: brightness(0) invert(1);
 }
 
-/* Footer newsletter input con icono */
 .footer__newsletter-input-wrap {
   flex: 1;
   display: flex;
@@ -555,7 +524,6 @@ a {
   text-align: center;
 }
 
-/* Footer social icons */
 .footer__social {
   display: flex;
   gap: var(--spacing-md);
@@ -584,9 +552,6 @@ a {
   width: 100%;
 }
 
-/* ================================
-   TABLET — 768px
-   ================================ */
 @media (min-width: 768px) {
   .navbar__links {
     display: flex;
@@ -617,9 +582,6 @@ a {
   }
 }
 
-/* ================================
-   DESKTOP — 1024px
-   ================================ */
 @media (min-width: 1024px) {
   .navbar__links {
     display: flex;
@@ -650,9 +612,6 @@ a {
   }
 }
 
-/* ================================
-   SPLASH SCREEN — mobile only
-   ================================ */
 .splash {
   display: flex;
   flex-direction: column;
@@ -702,14 +661,12 @@ a {
   opacity: 0.85;
 }
 
-/* En desktop ocultamos el splash y mostramos el contenido normal */
 @media (min-width: 768px) {
   .splash {
     display: none;
   }
 }
 
-/* En mobile ocultamos navbar y main, solo mostramos splash */
 @media (max-width: 767px) {
   .navbar {
     display: none;

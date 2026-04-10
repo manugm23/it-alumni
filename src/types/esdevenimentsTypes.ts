@@ -1,6 +1,3 @@
-// ================================
-// TIPUS (Types)
-// ================================
 export interface Esdeveniment {
   id: number;
   title: string;

@@ -1,6 +1,3 @@
-// ================================
-// TIPUS (Types)
-// ================================
 export interface Alumni {
   id: number;
   name: string;
